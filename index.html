@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bower_components/bootstrap/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <title>Turnover Prediction</title>
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+        <!--logo-->
+        <img class="pull-left" src="images/logo_b.png">
+        <!--menu-->
+        <ul class="pull-left">
+        	<li><a href="#">Overview</a></li>
+        	<li><a href="#" class="active">Turnover Factor</a></li>
+        	<li><a href="#">About</a></li>
+        </ul>
+        <!--account-->
+        <ul class="pull-right account">
+        	<li>Cindy Lai  <span class="caret gray"></span></li>       
+        </ul>
+        <div class="pull-right accountImg"></div>       
+    </header>
+    
+    <div id="containerBox">
+        <div class="container">
+            <nav>
+                <div class="pull-right styled-select">
+                    <select class="form-control">
+                        <option>Dong Guan</option>
+                    </select>               
+                </div>
+                <div class="pull-right styled-select">
+                    <select class="form-control">
+                        <option>2015-2</option>
+                    </select>               
+                </div>             
+            </nav>
+            
+            <main>
+            	<!--Main Factors-->
+                <div class="col-md-4" >
+                    <div class="section" style="height:345px;padding: 12px 5px 12px 16px;">
+                    	<div class="nav-title">turnover Factors</div>
+                        <div class="title">Main Factors</div>
+                    </div>
+                    
+                </div>
+                
+                <!--01 Salary-->
+                <div class="col-md-8">
+                	<div class="section">
+                    <div class="col-md-9" style="padding-right: 20px;">
+                    	<div class="nav-title">TOP 01 Turnover</div>
+                        <div class="title">Salary</div>
+                        	<div id="salary" style="min-width: 250px; height: 250px; margin: 0 auto 0 -15px;"></div> 
+                     </div> 
+                     <div class="col-md-3 ">
+                     	<div class="dark_gray b">Average Factor</div>
+                  		<div class="col-md-12 col-sm-6">
+                        	<div>
+                            	<div id="TakeHour_radial_1" class="radial-progress type1" data-progress="0">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                            <div class="fill fix"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="inset">
+                                        <div class="percentage"></div>
+                                    </div>
+                            	</div>
+                            </div><!--average_chart-->
+                        	<div class="salary_text">
+                            Voluntary Turnover
+                            </div>                            
+                        </div><!--Voluntary Turnover end-->
+                        <div class="col-md-12 col-sm-6">
+                        	<div>
+                            	<div id="TakeHour_radial_2" class="radial-progress type1" data-progress="0">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                            <div class="fill fix"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="inset">
+                                        <div class="percentage"></div>
+                                    </div>
+                            	</div>
+                            </div><!--average_chart-->
+                        	<div class="salary_text">
+                            Non-Voluntary Turnover
+                            </div>                        
+                        </div><!-- Non-Voluntary Turnover end -->                     
+                     </div>
+                                                                   
+                    </div>
+                </div>
+                
+                <!--02 Take a day off Hour-->
+                <div class="col-md-6 left">
+                	<div class="section" style="height:510px">
+                    	<div class="nav-title">TOP 02 Turnover</div>
+                        <div class="title">Take a day off Hour</div>
+                        
+                        <div id="TakeoffHour" style="min-width: 310px; height: 250px; margin: 0 auto 0 -15px;"></div> 
+                        <div class="dark_gray b marginT20">Average Factor</div>
+                  		<div class="col-sm-6 averageBox">
+                        	<div class="average_chart">
+                            	<div id="TakeHour_radial_3" class="radial-progress type2" data-progress="0">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                            <div class="fill fix"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="inset">
+                                        <div class="percentage"></div>
+                                    </div>
+                            	</div>
+                            </div><!--average_chart-->
+                        	<div class="average_text">
+                            Voluntary Turnover
+                            </div>                            
+                        </div><!--Voluntary Turnover end-->
+                        <div class="col-sm-6 averageBox">
+                        	<div class="average_chart">
+                            	<div id="TakeHour_radial_4" class="radial-progress type2" data-progress="0">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                            <div class="fill fix"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="inset">
+                                        <div class="percentage"></div>
+                                    </div>
+                            	</div>
+                            </div><!--average_chart-->
+                        	<div class="average_text">
+                            Non-Voluntary Turnover
+                            </div>                        
+                        </div><!-- Non-Voluntary Turnover end -->
+                    </div>
+                </div>
+                
+                <!--03 Over Hour-->
+                <div class="col-md-6 right">
+                	<div class="section" style="height:510px">
+                    	<div class="nav-title">TOP 03 Turnover</div>
+                        <div class="title">Over Hour</div> 
+                        <div id="OverHour" style="min-width: 310px; height: 250px; margin: 0 auto 0 -15px;"></div>
+                        <div class="dark_gray b marginT20">Average Factor</div>  
+                  		<div class="col-sm-6 averageBox">
+                        	<div class="average_chart">
+                            	<div id="TakeHour_radial_5" class="radial-progress type3" data-progress="0">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                            <div class="fill fix"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="inset">
+                                        <div class="percentage"></div>
+                                    </div>
+                            	</div>
+                            </div><!--average_chart-->
+                        	<div class="average_text">
+                            Voluntary Turnover
+                            </div>                            
+                        </div>
+                        
+                        <div class="col-sm-6 averageBox">
+                        	<div class="average_chart">
+                            	<div id="TakeHour_radial_6" class="radial-progress type3" data-progress="0">
+                                    <div class="circle">
+                                        <div class="mask full">
+                                            <div class="fill"></div>
+                                        </div>
+                                        <div class="mask half">
+                                            <div class="fill"></div>
+                                            <div class="fill fix"></div>
+                                        </div>
+                                        <div class="shadow"></div>
+                                    </div>
+                                    <div class="inset">
+                                        <div class="percentage"></div>
+                                    </div>
+                            	</div>
+                            </div><!--average_chart-->
+                        	<div class="average_text">
+                            Non-Voluntary Turnover
+                            </div>                        
+                        </div>                                                                   
+                    </div>
+                </div>
+                
+            </main>
+        </div>
+        <footer>Copyright © 2016 Delta Electronics, Inc. All Rights </footer>
+    </div>
+    
+    
+</div><!--wrapper-->
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="js/highcharts.js"></script>
+<script src="js/exporting.js"></script>
+<script src="js/salary.js"></script>
+<script src="js/TakeoffHour.js"></script>
+<script src="js/OverHour.js"></script>
+<script src="js/radial-progress.js"></script>
+</body>
+</html>

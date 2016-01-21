@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-size:inherit; line-height:inherit; font-family:inherit;}
+html{font:inherit;}
+h2, .h2, h3, .h3, h4, .h4, h5, .h5{font-size: inherit;}
+* {
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+font-weight: bold;
+ line-height:inherit;
+}
+a:hover, a:focus {
+color: #2a6496;
+text-decoration: none;
+}
+div#collector div.container{padding:0;}
+
+div#UEHome a{font-size:300% !important;}
+div.row {margin: 0px;}
+.btn{font-size:inherit;}
